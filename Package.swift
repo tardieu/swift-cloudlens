@@ -32,8 +32,6 @@ let package = Package(
     ]
 )
 
-#if !os(Linux)
 products.append(
     Product(name: "CloudLens", type: .Library(.Dynamic), modules: "CloudLens")
 )
-#endif
